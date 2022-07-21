@@ -6,6 +6,8 @@ After doing so, run it like this:
     python acquire.py
 To create the `data.json` file that contains the data.
 """
+import pandas as pd
+
 import os
 import json
 from typing import Dict, List, Optional, Union, cast
@@ -282,13 +284,18 @@ def scrape_github_data() -> List[Dict[str, str]]:
     """
     return [process_repo(repo) for repo in REPOS]
 
-    def get_github_data():
+if __name__ == "__main__":
+    data = scrape_github_data()
+    json.dump(data, open("data2.json", "w"), indent=1)
+
+def get_github_data():
     """ importing data from github oceanography repositories"""
     filename = "ocean.csv"
 
     if os.path.isfile(filename):
         return pd.read_csv(filename)
     else:
+        
         #summoning data from acquire file
         df = scrape_github_data()
         #turning into a data frame
@@ -296,11 +303,5 @@ def scrape_github_data() -> List[Dict[str, str]]:
         #turning it into a csv
         df.to_csv('ocean.csv')
         df.to_csv(filename, index = False)
-        #changing it csv because its a csv
-
         # Return the dataframe to the calling code
-    return df
-
-if __name__ == "__main__":
-    data = scrape_github_data()
-    json.dump(data, open("data2.json", "w"), indent=1)
+        return df
