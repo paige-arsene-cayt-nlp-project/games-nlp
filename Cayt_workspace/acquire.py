@@ -14,7 +14,8 @@ from env import github_token, github_username
 # 1) get_repo_links() >> used by get_oceanography_repos to pull repo links for 1 search results page
 # 2) get_oceanography_repos >> used by create_REPOS to get new list of oceanography repos
 # 3) create_REPOs >> Returns a list of all repos for other acquire functions - from csv or new copy
-# 4)
+# 4) series of functions provided by Codeup
+# 5) acuire_data >> wrapper for merging list of repos with codeup acquisition functions
 
 
 #Define Header
@@ -44,13 +45,13 @@ def get_oceanography_repos():
     #set starting point
     #we know there are multiple pages, so including query parameter 'p'
     p=1
-    url = f'https://github.com/search?p={p}&q=oceanography&type=Repositories'
+    url = f'https://github.com/search?p={p}&q=games&type=Repositories'
     
     #FIRST PAGE
     #get page info
     response = requests.get(url, headers=headers)
     #SOUP, there it is!
-    soup = BSoup(response.text)
+    soup = BSoup(response.text, 'html.parser')
     
     #grab links for first page
     repo_list = get_repo_links(soup)
@@ -67,13 +68,13 @@ def get_oceanography_repos():
         
         #get new soup
         response = requests.get(url, headers=headers)
-        soup = BSoup(response.text)
+        soup = BSoup(response.text, 'html.parser')
         
         #add new links to our list
         repo_list += get_repo_links(soup)
         
         #break loop if we have > X links
-        if len(repo_list) >= 200: break
+        if len(repo_list) >= 250: break
         
         #grab next page
         np_tag = soup.find('a',{'class':'next_page'})
@@ -158,7 +159,6 @@ def process_repo(repo: str) -> Dict[str, str]:
     if not contents: return None #CAYT
     #get readme URL
     rm_url = get_readme_download_url(contents)
-    print(rm_url)
     #if url exists
     if rm_url == '': return None #CAYT
     readme_contents = requests.get(rm_url).text
