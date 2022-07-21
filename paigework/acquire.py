@@ -282,6 +282,24 @@ def scrape_github_data() -> List[Dict[str, str]]:
     """
     return [process_repo(repo) for repo in REPOS]
 
+    def get_github_data():
+    """ importing data from github oceanography repositories"""
+    filename = "ocean.csv"
+
+    if os.path.isfile(filename):
+        return pd.read_csv(filename)
+    else:
+        #summoning data from acquire file
+        df = scrape_github_data()
+        #turning into a data frame
+        df = pd.DataFrame(df)
+        #turning it into a csv
+        df.to_csv('ocean.csv')
+        df.to_csv(filename, index = False)
+        #changing it csv because its a csv
+
+        # Return the dataframe to the calling code
+    return df
 
 if __name__ == "__main__":
     data = scrape_github_data()
