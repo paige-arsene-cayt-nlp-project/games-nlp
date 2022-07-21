@@ -14,8 +14,8 @@ import requests
 from env import github_token, github_username
 
 
-# REPOS = []
-
+REPOS = []
+ 
 
 headers = {"Authorization": f"token {github_token}", "User-Agent": github_username}
 
@@ -41,11 +41,7 @@ def get_repo_language(repo: str) -> str:
     repo_info = github_api_request(url)
     if type(repo_info) is dict:
         repo_info = cast(Dict, repo_info)
-        if "language" not in repo_info:
-            raise Exception(
-                "'language' key not round in response\n{}".format(json.dumps(repo_info))
-            )
-        return repo_info["language"]
+        return repo_info.get("language", None)
     raise Exception(
         f"Expecting a dictionary response from {url}, instead got {json.dumps(repo_info)}"
     )
@@ -79,11 +75,7 @@ def process_repo(repo: str) -> Dict[str, str]:
     dictionary with the language of the repo and the readme contents.
     """
     contents = get_repo_contents(repo)
-    readme_download_url = get_readme_download_url(contents)
-    if readme_download_url == "":
-        readme_contents = ""
-    else:
-        readme_contents = requests.get(readme_download_url).text
+    readme_contents = requests.get(get_readme_download_url(contents)).text
     return {
         "repo": repo,
         "language": get_repo_language(repo),
@@ -100,24 +92,4 @@ def scrape_github_data() -> List[Dict[str, str]]:
 
 if __name__ == "__main__":
     data = scrape_github_data()
-    json.dump(data, open("data.json", "w"), indent=1)
-
-def get_github_data():
-    """ importing data from github music bot repositories"""
-    filename = "musicbot_data.csv"
-
-    if os.path.isfile(filename):
-        return pd.read_csv(filename)
-    else:
-        
-        #summoning data from acquire file
-        df = scrape_github_data()
-        #turning into a data frame
-        df = pd.DataFrame(df)
-        #turning it into a csv
-        df.to_csv('musicbot_data.csv')
-        df.to_csv(filename, index = False)
-        #changing it csv because its a csv
-
-        # Return the dataframe to the calling code
-        return 
+    json.dump(data, open("data2.json", "w"), indent=1)
