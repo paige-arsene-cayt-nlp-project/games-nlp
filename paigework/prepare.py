@@ -33,7 +33,7 @@ def basic_clean(words):
     #Remove '(http' words
     words = re.sub(r"\(http[^\s]*",'',words)
     #Remove any words with just # signs - not perfect, but should remove most
-    words = re.sub(r"\s#+\s",'',words)
+    words = re.sub(r"\s#+\s",' ',words)
     #Remove these characters
     #words = re.sub(r"[\'|\"|\-")
     words = re.sub(r"[^a-z0-9'\s#]",'',words)
@@ -99,6 +99,10 @@ def prep_data():
     df.rename(columns={'readme_contents':'content'},inplace=True)
     #drop rows with nulls
     df.dropna(axis=0,inplace=True)
+    # #drop any languages w/ < 10 values
+    vc = df.language.value_counts() #get count of each language
+    keep_lang = vc[vc>=10].index.tolist()  #filter out those with 10+ values into list
+    df = df[df.language.isin(keep_lang)] #filter dataframe
     
     #Do a Basic Clean - lowercase, unicode, ascii, some special character removal
     df.content = df.content.apply(basic_clean)
