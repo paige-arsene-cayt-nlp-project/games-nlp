@@ -38,7 +38,7 @@ def basic_clean(words):
     words = re.sub(r"\s#+\s",' ',words)
     #Remove these characters
     #words = re.sub(r"[\'|\"|\-")
-    words = re.sub(r"[^a-z0-9'\s#]",'',words)
+    words = re.sub(r"[^a-z0-9\s#]",'',words)
 
     #return stripped string
     return words.strip()
