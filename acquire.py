@@ -15,7 +15,7 @@ from env import github_token, github_username
 # 2) get_oceanography_repos >> used by create_REPOS to get new list of oceanography repos
 # 3) create_REPOs >> Returns a list of all repos for other acquire functions - from csv or new copy
 # 4) series of functions provided by Codeup
-# 5) acuire_data >> wrapper for merging list of repos with codeup acquisition functions
+# 5) acquire_data >> wrapper for merging list of repos with codeup acquisition functions
 
 
 #Define Header
