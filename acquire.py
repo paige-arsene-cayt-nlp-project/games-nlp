@@ -74,7 +74,7 @@ def get_oceanography_repos():
         repo_list += get_repo_links(soup)
         
         #break loop if we have > X links
-        if len(repo_list) >= 250: break
+        if len(repo_list) >= 500: break
         
         #grab next page
         np_tag = soup.find('a',{'class':'next_page'})
