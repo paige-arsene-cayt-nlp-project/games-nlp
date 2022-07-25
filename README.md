@@ -1,6 +1,8 @@
 # Predicting Coding Language in 'Games' Readmes
 ### By: Arsene Boundaone, Cayt Schlichting, Paige Rackley
-*Audience: Target audience for our project is the Codeup Data Science cohort/instructors. 
+
+
+Target audience for our project is the Codeup Data Science cohort and instructors.
 
 
 <hr style="background-color:silver;height:3px;" />
