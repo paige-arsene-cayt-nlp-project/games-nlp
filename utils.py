@@ -33,7 +33,7 @@ def plot_target_distro(tr):
     plt.tight_layout()
     return None
 
-def create_aggregated_tfidf(train):
+def create_aggregated_tfidf(tr):
     '''
     Creates a TF-IDF score for each word by language. 
     Languages are aggregated into a single 'document'
