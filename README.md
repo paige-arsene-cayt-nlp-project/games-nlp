@@ -10,6 +10,7 @@ Target audience for our project is the Codeup Data Science cohort and instructor
 ## Project Summary
 <hr style="background-color:silver;height:3px;" />
 
+
 ### Project Deliverables
 > - <b> google slides that: </b>
 
@@ -55,11 +56,14 @@ Target audience for our project is the Codeup Data Science cohort and instructor
 
 ## Executive Summary
 <hr style="background-color:silver;height:3px;" />
-
-**Project Goal:**
-The goal of this project is to use natural language processing and classification models to identify terms for predicting a readme's primary language on Github.
-
-**Discoveries and Recommendations**
+Through classification models, we were able to beat our baseline of 25.38% accuracy with a K-Nearest Neighbor model that had 33.8% accuracy. This is a small win, but I do believe there is room for improvement to have an even more accurate model. 
+</p>
+</p>
+<b>Project Goal:</b>
+The goal of this project was to use natural language processing and classification models to identify terms for predicting a readme's primary language on Github.
+</p>
+</p>
+<b>Discoveries and Recommendations:</b>
 
 
 <hr style="background-color:silver;height:3px;" />
