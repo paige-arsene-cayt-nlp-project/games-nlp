@@ -34,8 +34,8 @@ Target audience for our project is the Codeup Data Science cohort and instructor
 
 - [ ] **Acquire** Web scrapping of Github search results. The first 500 repos with the keyword of 'games' on the search date of July 22, 2022 were used.
 - [ ] Clean and **prepare** data for the explore phase. 
-- [ ] Create wrangle.py to store functions I created to automate the cleaning and preparation process. 
-- [ ] Separate train, validate, test subsets and scaled data.
+- [ ] Create prepare.py to store functions we created to automate the cleaning and preparation process. 
+- [ ] Separate train, validate, test subsets.
 - [ ] **Explore** the data through visualization using natural language processing methods.
     - [ ] Clearly define our hypotheses and questions.
     - [ ] Document findings and takeaways.
