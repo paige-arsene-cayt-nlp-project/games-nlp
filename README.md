@@ -8,14 +8,18 @@
 <hr style="background-color:silver;height:3px;" />
 
 ### Project Deliverables
-> - google slides that:
+> - <b> google slides that: </b>
+
     - summarize results from exploration and modeling
     - visuals that help describe our findings
-> - a github repository containing:
+    
+> - <b> a github repository containing: </b>
+
     - final notebook containing steps, analysis and findings
     - a README.md that contains description and steps to reproduce
     - README.md should also contin hyperlink to google slides
-> - a 5-6 minute presentation of findings
+    
+> - <b> a 5-6 minute presentation of findings </b>
     
 ### Initial questions on the data
 
