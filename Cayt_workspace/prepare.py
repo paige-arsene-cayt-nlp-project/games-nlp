@@ -35,10 +35,11 @@ def basic_clean(words):
     #Remove '(http' words
     words = re.sub(r"\(http[^\s]*",'',words)
     #Remove any words with just # signs - not perfect, but should remove most
-    words = re.sub(r"\s#+\s",' ',words)
+    #words = re.sub(r"\s#+\s",' ',words)
+    #Remove tab
+    words = re.sub(r'\&\#9\;','',words)
     #Remove these characters
-    #words = re.sub(r"[\'|\"|\-")
-    words = re.sub(r"[^a-z0-9'\s#]",'',words)
+    words = re.sub(r"[^a-z0-9\s]",'',words)
 
     #return stripped string
     return words.strip()
@@ -100,7 +101,7 @@ def split_data(df):
                                    random_state=123, 
                                    stratify=train_validate.language)
     return train, validate, test
-    
+
 def prep_data():
     '''
     Prepares the Github Readme data for exploration and modeling.
@@ -125,7 +126,7 @@ def prep_data():
     #tokenize
     df.content = df.content.apply(tokenize)
     #remove stopwords
-    df.content = df.content.apply(remove_stopwords)
+    df.content = df.content.apply(remove_stopwords,**{'extra_words':['games','game','gamer']})
     #lemmatize
     df.content = df.content.apply(lemmatize)
     
