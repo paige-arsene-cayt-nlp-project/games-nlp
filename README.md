@@ -86,9 +86,6 @@ The goal of this project is to use natural language processing and classificatio
 
 You can reproduce this project with the following steps:
 > - Read this README
-> - Clone the repository or download all files into your working directory
-> - Add your environment file to your working directory:
->  - filename should be env.py
->  - contains variables: username, password, host
-> - Run the Final_Report notebook or explore the other notebooks for greater insight into the project.
+> - Clone the repository containing both py files and final notebook to run together.
+> - If you are wanting to 
 

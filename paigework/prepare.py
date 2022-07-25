@@ -37,7 +37,7 @@ def basic_clean(words):
     #Remove any words with just # signs - not perfect, but should remove most
     #words = re.sub(r"\s#+\s",' ',words)
     #Remove tab
-    words = re.sub(r'\&\#9\;','',words)
+    words = re.sub(r'\&#9;','',words)
     #Remove these characters
     words = re.sub(r"[^a-z0-9\s]",'',words)
 
