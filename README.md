@@ -1,4 +1,5 @@
-# Project Title
+# Predicting Coding Language in 'Games' Readmes
+### By: Arsene Boundaone, Cayt Schlichting, Paige Rackley
 *Audience: Target audience for my final report is*
 
 
@@ -8,13 +9,19 @@
 <hr style="background-color:silver;height:3px;" />
 
 ### Project Deliverables
-> - A final report notebook
-> - Python modules for automation and to facilitate project reproduction
-> - Notebooks that show:
->  - Data acquisition and preparation 
->  - exploratory analysis not included in final report
->  - model creation, refinement and evaluation
+> - <b> google slides that: </b>
 
+    - summarize results from exploration and modeling
+    - visuals that help describe our findings
+    
+> - <b> a github repository containing: </b>
+
+    - final notebook containing steps, analysis and findings
+    - a README.md that contains description and steps to reproduce
+    - README.md should also contin hyperlink to google slides
+    
+> - <b> a 5-6 minute presentation of findings </b>
+    
 ### Initial questions on the data
 
 >  - Questions
@@ -23,15 +30,15 @@
 
 ### Project Plan 
 
-- [ ] **Acquire** data from the Codeup SQL Database. 
+- [ ] **Acquire** Web scrapping of Github search results. The first 500 repos with the keyword of 'games' on the search date of July 22, 2022 were used.
 - [ ] Clean and **prepare** data for the explore phase. 
 - [ ] Create wrangle.py to store functions I created to automate the cleaning and preparation process. 
 - [ ] Separate train, validate, test subsets and scaled data.
-- [ ] **Explore** the data through visualization and hypothesis testing.
-    - [ ] Clearly define at hypotheses and questions.
+- [ ] **Explore** the data through visualization using natural language processing methods.
+    - [ ] Clearly define our hypotheses and questions.
     - [ ] Document findings and takeaways.
 - [ ] Perform **modeling**:
-   - [ ] Identify model evaluation criteria
+   - [ ] Identify model evaluation criteria (what is our baseline?)
    - [ ] Create at least three different models.
    - [ ] Evaluate models on appropriate data subsets.
 - [ ] Create **Final Report** notebook with a curtailed version of the above steps.
@@ -48,6 +55,7 @@
 <hr style="background-color:silver;height:3px;" />
 
 **Project Goal:**
+The goal of this project is to use natural language processing and classification models to identify terms for predicting a readme's primary language on Github.
 
 **Discoveries and Recommendations**
 
@@ -74,7 +82,9 @@
 ## Reproducing this project
 <hr style="background-color:silver;height:3px;" />
 
-> In order to reproduce this project you will need your own environment file and access to the database. You can reproduce this project with the following steps:
+> In order to reproduce this project you will need .....
+
+You can reproduce this project with the following steps:
 > - Read this README
 > - Clone the repository or download all files into your working directory
 > - Add your environment file to your working directory:

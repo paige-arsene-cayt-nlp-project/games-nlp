@@ -6,6 +6,8 @@ import nltk
 import re
 import unicodedata
 
+from sklearn.model_selection import train_test_split
+
 #### TOC ####
 # 1) basic_clean
 # 2) remove_stopwords
@@ -86,6 +88,19 @@ def get_json_data():
     f.close()
     return data
 
+def split_data(df):
+    '''
+    This function performs split on game data, stratify language.
+    Returns train, validate, and test dfs. It is an all-in-all function.
+    '''
+    train_validate, test = train_test_split(df, test_size=.2, 
+                                        random_state=123, 
+                                        stratify=df.language)
+    train, validate = train_test_split(train_validate, test_size=.3, 
+                                   random_state=123, 
+                                   stratify=train_validate.language)
+    return train, validate, test
+    
 def prep_data():
     '''
     Prepares the Github Readme data for exploration and modeling.
