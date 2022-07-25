@@ -20,7 +20,7 @@ Target audience for our project is the Codeup Data Science cohort and instructor
 
     - final notebook containing steps, analysis and findings
     - a README.md that contains description and steps to reproduce
-    - README.md should also contin hyperlink to google slides
+    - README.md should also contain hyperlink to google slides
     
 > - <b> a 5-6 minute presentation of findings </b>
     
@@ -41,10 +41,10 @@ Target audience for our project is the Codeup Data Science cohort and instructor
     - [ ] Document findings and takeaways.
 - [ ] Perform **modeling**:
    - [ ] Identify model evaluation criteria (what is our baseline?)
-   - [ ] Create at least three different models.
+   - [ ] Create at least three different classification models.
    - [ ] Evaluate models on appropriate data subsets.
 - [ ] Create **Final Report** notebook with a curtailed version of the above steps.
-- [ ] Create and review README. Ensure it contaions:
+- [ ] Create and review README. Ensure it contains:
    - [ ] Data dictionary
    - [ ] Project summary and goals
    - [ ] Initial Hypothesis
@@ -69,25 +69,28 @@ The goal of this project is to use natural language processing and classificatio
 
 |Target|Definition|
 |:-------|:----------|
-| Target | Definition|
+| Language | The primary coding language identified in the GitHub repository|
 
 |Feature|Definition|
 |:-------|:----------|
-| Feature       | Definition |
-| Feature        | Definition |
-| Feature       | Definition |
-| Feature        | Definition 
-
+| content       | Content's of the repository's readme.md (String) |
+| repo        | partial repo URL |
 
 <hr style="background-color:silver;height:3px;" />
 
 ## Reproducing this project
 <hr style="background-color:silver;height:3px;" />
 
-> In order to reproduce this project you will need .....
-
 You can reproduce this project with the following steps:
 > - Read this README
-> - Clone the repository containing both py files and final notebook to run together.
-> - If you are wanting to 
+> - Clone the repository. Alternatively, you can download the .py, .json and Final_Report from the main folder.
+> - Run the Final_Report notebook or explore the other notebooks for greater insight into the project.
+
+If you want to recreate this with your own list of repos:
+> - Clone the repository
+> - Remove the repos.csv and data2.json files.
+> - Read through the acquire.py functions and update the search URL with any keyword changes or increase the number of results.
+> - run "python acquire.py" from your terminal to generate the csv and json files.
+> - Step through the Final Report and other notebooks.  You may want to modify which languages are viewed.
+
 
