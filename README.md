@@ -1,4 +1,5 @@
-# Project Title
+# Predicting Coding Language in 'Games' Readmes
+### By: Arsene Boundaone, Cayt Schlichting, Paige Rackley
 *Audience: Target audience for my final report is*
 
 
@@ -29,7 +30,7 @@
 
 ### Project Plan 
 
-- [ ] **Acquire** data from the Codeup SQL Database. 
+- [ ] **Acquire** Web scrapping of Github search results. The first 500 repos with the keyword of 'games' on the search date of July 22, 2022 were used.
 - [ ] Clean and **prepare** data for the explore phase. 
 - [ ] Create wrangle.py to store functions I created to automate the cleaning and preparation process. 
 - [ ] Separate train, validate, test subsets and scaled data.
@@ -54,6 +55,7 @@
 <hr style="background-color:silver;height:3px;" />
 
 **Project Goal:**
+The goal of this project is to use natural language processing and classification models to identify terms for predicting a readme's primary language on Github.
 
 **Discoveries and Recommendations**
 
