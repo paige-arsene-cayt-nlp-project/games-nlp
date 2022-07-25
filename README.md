@@ -41,7 +41,7 @@ Target audience for our project is the Codeup Data Science cohort and instructor
     - [ ] Document findings and takeaways.
 - [ ] Perform **modeling**:
    - [ ] Identify model evaluation criteria (what is our baseline?)
-   - [ ] Create at least three different models.
+   - [ ] Create at least three different classifcation models.
    - [ ] Evaluate models on appropriate data subsets.
 - [ ] Create **Final Report** notebook with a curtailed version of the above steps.
 - [ ] Create and review README. Ensure it contaions:
