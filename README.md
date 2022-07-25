@@ -56,7 +56,7 @@ Target audience for our project is the Codeup Data Science cohort and instructor
 
 ## Executive Summary
 <hr style="background-color:silver;height:3px;" />
-Through classification models, we were able to beat our baseline of 25.38% accuracy with a K-Nearest Neighbor model that had 33.8% accuracy. This is a small win, but I do believe there is room for improvement to have an even more accurate model. 
+Through classification models, we were able to beat our baseline of 25.38% accuracy with a K-Nearest Neighbor model that had 38% accuracy. This is a small win, but I do believe there is room for improvement to have an even more accurate model. 
 </p>
 </p>
 <b>Project Goal:</b>
