@@ -1,6 +1,6 @@
 # Predicting Coding Language in 'Games' Readmes
 ### By: Arsene Boundaone, Cayt Schlichting, Paige Rackley
-*Audience: Target audience for my final report is*
+*Audience: Target audience for our project is the Codeup Data Science cohort/instructors. 
 
 
 <hr style="background-color:silver;height:3px;" />
@@ -23,10 +23,10 @@
 > - <b> a 5-6 minute presentation of findings </b>
     
 ### Initial questions on the data
-
->  - Questions
->  - Thoughts
->  - etc
+> - What are the top 5 programming languages when searching for 'Game' repos in github?
+> - What are the most common words for some of these languages?
+> - How do the most common words for a language compare to the highest TF-IDF scores for that language?
+> - What are common bigrams for some of these languages? Are they significant to the kind of programming language?
 
 ### Project Plan 
 
