@@ -8,13 +8,15 @@
 <hr style="background-color:silver;height:3px;" />
 
 ### Project Deliverables
-> - A final report notebook
-> - Python modules for automation and to facilitate project reproduction
-> - Notebooks that show:
->  - Data acquisition and preparation 
->  - exploratory analysis not included in final report
->  - model creation, refinement and evaluation
-
+> - google slides that:
+    - summarize results from exploration and modeling
+    - visuals that help describe our findings
+> - a github repository containing:
+    - final notebook containing steps, analysis and findings
+    - a README.md that contains description and steps to reproduce
+    - README.md should also contin hyperlink to google slides
+> - a 5-6 minute presentation of findings
+    
 ### Initial questions on the data
 
 >  - Questions
