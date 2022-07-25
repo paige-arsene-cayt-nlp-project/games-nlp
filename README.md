@@ -34,11 +34,11 @@
 - [ ] Clean and **prepare** data for the explore phase. 
 - [ ] Create wrangle.py to store functions I created to automate the cleaning and preparation process. 
 - [ ] Separate train, validate, test subsets and scaled data.
-- [ ] **Explore** the data through visualization and hypothesis testing.
-    - [ ] Clearly define at hypotheses and questions.
+- [ ] **Explore** the data through visualization using natural language processing methods.
+    - [ ] Clearly define our hypotheses and questions.
     - [ ] Document findings and takeaways.
 - [ ] Perform **modeling**:
-   - [ ] Identify model evaluation criteria
+   - [ ] Identify model evaluation criteria (what is our baseline?)
    - [ ] Create at least three different models.
    - [ ] Evaluate models on appropriate data subsets.
 - [ ] Create **Final Report** notebook with a curtailed version of the above steps.
@@ -82,7 +82,9 @@ The goal of this project is to use natural language processing and classificatio
 ## Reproducing this project
 <hr style="background-color:silver;height:3px;" />
 
-> In order to reproduce this project you will need your own environment file and access to the database. You can reproduce this project with the following steps:
+> In order to reproduce this project you will need .....
+
+You can reproduce this project with the following steps:
 > - Read this README
 > - Clone the repository or download all files into your working directory
 > - Add your environment file to your working directory:
