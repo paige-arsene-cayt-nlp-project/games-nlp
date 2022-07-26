@@ -2,6 +2,8 @@
 ### By: Arsene Boundaone, Cayt Schlichting, Paige Rackley
 
 
+The Google slide summary for our project was created in Canva [here.](https://www.canva.com/design/DAFHepNQxeU/BU7gDYBLlhrKJVtyLjZuwA/edit?utm_content=DAFHepNQxeU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+
 Target audience for our project is the Codeup Data Science cohort and instructors.
 
 
