@@ -76,7 +76,7 @@ The goal of this project was to use natural language processing and classificati
 <b>Recommendations & Next Steps:</b>
 
 > - With more time, we would further tune our models. We would like to try additional random forest and decision tree classifiers with a greater depth given the number of features.
-> - We would also like to perform this modeling with a larger dataset. Some of the less common languages appeared less than 20 times, making it a relatively small amount of data to train the model on.
+> - We would also like to perform this modeling with a larger dataset. Some of the less common languages appeared less than 20 times, making it a relatively small amount of data to train the model on.  This also likely adversely affected the performance of our KNN model for the smaller datasets (validate and test).
 
 <hr style="background-color:silver;height:3px;" />
 
