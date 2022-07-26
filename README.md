@@ -65,8 +65,14 @@ Through classification models, we were able to beat our baseline of 25.38% accur
 The goal of this project was to use natural language processing and classification models to identify terms for predicting a readme's primary language on Github.
 </p>
 </p>
-<b>Discoveries and Recommendations:</b>
+<b>Key Findings:</b>
+- Coding language name and libraries associated with that language seem to be an indicator of language. This is most apparent using the TF-IDF score.
+- Without a deeper understanding of common terms for each language, it is more difficult for us to identify.
+- KNN performed best on our validate subset with an accuracy of 47% and a Precision of 75%. However, these scores dropped notably on our test subset with an accuracy of 38% and precision of 43%. The KNN accuracy outperformed baseline by 12.65%.
 
+<b>Recommendations & Next Steps:</b>
+- With more time, we would further tune our models. We would like to try additional random forest and decision tree classifiers with a greater depth given the number of features.
+- We would also like to perform this modeling with a larger dataset. Some of the less common languages appeared less than 20 times, making it a relatively small amount of data to train the model on.
 
 <hr style="background-color:silver;height:3px;" />
 
